@@ -1,26 +1,96 @@
 @import "tailwindcss";
 
+/* utilities ที่ประกาศเอง */
+@utility h1 {
+  @apply text-4xl md:text-6xl font-extrabold tracking-tight;
+}
+
+@utility h2 {
+  @apply text-2xl md:text-4xl font-bold;
+}
+
+@utility p {
+  @apply text-base md:text-lg text-gray-500;
+}
+
+@utility container-max {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+@utility section {
+  @apply py-16 md:py-24;
+}
+
+@utility card {
+  @apply rounded-2xl shadow border border-gray-100 bg-white;
+}
+
+@utility badge {
+  @apply inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium;
+}
+
+@utility btn {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold shadow transition-transform active:scale-95;
+}
+
+@utility btn-primary {
+  @apply bg-black text-white hover:bg-gray-900;
+}
+
+@utility btn-ghost {
+  @apply bg-white text-black border hover:bg-gray-50;
+}
+
+/* color-scheme: light;
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply antialiased text-brand bg-white;
 }
+
+
+.container-max {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.h1 {
+  @apply text-4xl md:text-6xl font-extrabold tracking-tight;
+}
+
+.h2 {
+  @apply text-2xl md:text-4xl font-bold;
+}
+
+.p {
+  @apply text-base md:text-lg text-brand-200;
+}
+
+.card {
+  @apply rounded-2xl shadow-soft border border-gray-100 bg-white;
+}
+
+.badge {
+  @apply inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-semibold shadow-soft transition-transform active:scale-95;
+}
+
+.btn-primary {
+  @apply bg-black text-white hover:bg-gray-900;
+}
+
+.btn-ghost {
+  @apply bg-white text-black border hover:bg-gray-50;
+} */
