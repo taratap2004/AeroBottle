@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     title: "AeroBottle — ขวดน้ำดื่มสแตนเลสสูญญากาศ",
     description: "ขวดน้ำสแตนเลสสูญญากาศ เก็บความเย็น 24 ชม. ความร้อน 12 ชม. น้ำหนักเบา ดีไซน์พรีเมียม",
     metadataBase: new URL("https://example.com"),
+    icons: {
+        icon: "/AeroBottle_Logo.svg",
+    },
     openGraph: {
         title: "AeroBottle",
         description: "ขวดน้ำสแตนเลสสูญญากาศ พกพาง่าย เก็บความเย็น 24 ชม.",
